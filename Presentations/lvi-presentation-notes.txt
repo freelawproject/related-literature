@@ -1,0 +1,59 @@
+Question:
+ - How long? 30 min + 15 min Q&A
+ - What day? Monday, 1pm
+ - When due? Sept. 15
+ - What due?
+
+Process:
+ - Figure out above questions
+ - Read proposal
+ - Read Brian's proposal
+ - Write outline
+ - Make slides
+ - Prep remarks
+ - Verify quality of the scrapers (are they still working?)
+ - Make schedule of what I want to see (and share it)
+
+- CL background (3)
+- Bio (2)
+    - Not lawyer
+    - Not CS
+    - But I am xyz (michaeljaylissner.com)
+- Technical:
+    - Features
+        - Juriscraper (10)
+            - Extensibility (for Video, oral arguments, etc)
+            - Federal Appeals Courts (and some state courts)
+            - Varied (possibly i18n) geographies
+            - The code:
+                - DRY
+                - OO
+                - Small
+                - Python (PEP8) & Xpath
+                    - lxml
+                    - requests
+                    - chardet
+                - No repitition
+                - Many
+            - Automated character detection and conversion to utf8
+            - Simple installation
+            - Friendly and transparent to court websites
+            - Harmonization of words (USA, vs.) and dates
+            - Title casing of case names
+            - Sanity checking and (rudimentary) alerts
+            - Hard failure design
+        - Caller (with state store) (8min)
+            - Duplicate detection/elimination
+            - Minimization of impact on court websites
+            - Mimetype detection
+            - OCR
+                - Special font work (http://www.michaeljaylissner.com/blog/and-the-winning-font-in-court-documents-is)
+            - "Decryption"
+        - LXML tester tool (2 minutes)
+    - Future (4 minutes)
+        - Better alerts
+        - Rate throttling per court
+        - HTML Tidying
+        - API refactoring
+        - More courts!
+        - More contributors
